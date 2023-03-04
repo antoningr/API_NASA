@@ -141,6 +141,6 @@ L'utilisateur peut maintenant naviguer entre les différentes pages et fonctionn
 ### Page d'accueil de l'application
 La page d'accueil de l'application web est la première page que l'utilisateur voit lorsqu'il ouvre l'application. Elle sert à présenter brièvement les fonctionnalités de l'application.
 
-La page d'accueil de l'application web permet d'introduire l'application web et de présenter les images de la NASA récupére sur l'Astronomy Picture of the Day (APOD) via l'API de la NASA.
+La page d'accueil de l'application web permet d'introduire l'application web et de présenter les images de la NASA récupére sur l'Astronomy Picture of the Day (APOD) via l'API de la NASA. Cette application vise à permettre aux utilisateurs de naviguer et de visualiser les images de la NASA d'une manière plus intuitive et interactive.
 
 <img src="img/home.png" alt="Page d'accueil de l'application">
