@@ -1,4 +1,4 @@
-# Projet : NASA API
+# Projet NASA API : Création d'une application Web avec Flask
 
 
 ## Introduction
@@ -36,11 +36,13 @@ La documentation complète de cette API est disponible dans le [repository Githu
 
 
 ### Description du Projet
-Le but de ce projet est de récupérer les images de la NASA et les enregistrer localement dans un dossier appelé "satic" à partir de l'API de la NASA. Il utilise le module requests pour effectuer une requête GET à l'API de la NASA en spécifiant les paramètres de la requête tels que la date, la date de début, la date de fin et le nombre d'images à récupérer..
+Le projet "NASA API : Création d'une application Web avec Flask" consiste à développer une application Web utilisant Flask, un framework Python, pour récupérer les images de la NASA à partir de l'API publique de la NASA et les afficher sur le site Web. Le projet vise à permettre aux utilisateurs de naviguer et de visualiser les images de la NASA d'une manière plus intuitive et interactive.
 
-Si la réponse de la requête est réussie, les données de la réponse sont converties en une liste de dictionnaires Python. Pour chaque élément de la liste de données, l'URL de l'image est extraite et l'image est téléchargée à partir de cette URL à l'aide du module requests. L'image est ensuite enregistrée localement dans le dossier "satic" avec le nom "nasa_image_[date].jpg", où "[date]" est la date de l'image récupérée.
+Le projet comprend plusieurs étapes, notamment la configuration de l'environnement de développement, l'installation des dépendances et des bibliothèques, la mise en place d'un serveur local Flask, la récupération des images de la NASA à partir de l'API de la NASA, et leur affichage sur le site Web.
 
-Si la requête échoue, un message d'erreur est affiché. Le projet peut être personnalisé en changeant les paramètres de la requête pour récupérer différents types de données ou en utilisant l'API de la NASA pour d'autres projets d'exploration spatiale.
+Le projet implique également la manipulation des images récupérées, telles que le redimensionnement ou le recadrage, ainsi que l'enregistrement des images localement.
+
+En fin de compte, le projet vise à fournir aux utilisateurs une expérience visuelle agréable pour naviguer à travers les images de la NASA et en apprendre davantage sur les activités de la NASA et les événements récents de l'espace.
 
 
 ## Information du projet
