@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>NASA : Astronomy Picture of the Day (APOD)</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+      .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .image-container {
+        text-align: center;
+        padding: 20px;
+      }
+      .image-title {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      .image-description {
+        margin-top: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align:center;">NASA : Astronomy Picture of the Day (APOD)</h1>
+    <h2 style="text-align:center;">Projet NASA API</h2>
+    <hr>
+      <h3>L'un des sites Web les plus populaires de la NASA est l'Astronomy Picture of the Day (APOD). L'Astronomy Picture of the Day (APOD) est un site web qui propose chaque jour une image ou une photographie astronomique différente, accompagnée d'une brève explication écrite par des astronomes professionnels. Le site a été créé en 1995 par les astrophysiciens Jerry Bonnell et Robert Nemiroff et est hébergé par la NASA. Depuis sa création, APOD est devenu un site très populaire avec un public international, et il est souvent cité comme l'un des sites Web les plus populaires de la NASA.</h3>
+      <h3>APOD présente une grande variété d'images astronomiques, y compris des photographies de galaxies lointaines, de nébuleuses colorées, de planètes et de leurs lunes, d'étoiles brillantes, d'aurores boréales et bien plus encore. Les images sont souvent accompagnées d'informations et d'explications sur les phénomènes représentés et les techniques utilisées pour les capturer.</h3>
+      <h3>APOD est disponible en plusieurs langues et permet également aux utilisateurs de parcourir et de rechercher des images par date, sujet ou mot-clé. Le site offre également une fonctionnalité pour télécharger des images en haute résolution pour une utilisation personnelle ou éducative. En somme, l'Astronomy Picture of the Day est une ressource précieuse pour les amateurs d'astronomie et les curieux de tous niveaux.</h3>
+      {% for image in images %}
+      {% if image.endswith('.jpg') %}
+        <div class="image-container">
+          <img src="{{ url_for('static', filename=image) }}" alt="{{ image }}" class="center">
+          <div class="image-title">{{ image }}</div>
+        </div>
+      {% endif %}
+      {% endfor %}
+    </body>
+</html>
